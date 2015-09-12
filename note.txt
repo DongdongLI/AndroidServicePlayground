@@ -1,0 +1,16 @@
+	functionality:
+		1. click start to start the service 
+		2. click work to trigger the heavy work
+		3. click stop to stop the service
+		
+	
+	
+	In this working version, Message is abandoned for now since I cannot figure out how it works in both side
+	
+	instead, 
+	
+	in activity, a service reference is kept to call the function in it.
+		(get it from binder)
+		
+	on the other hand, the service send out broadcast
+	 and the activity have a BroadcastReceiver to take care the info
